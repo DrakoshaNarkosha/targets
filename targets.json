@@ -2905,4 +2905,28 @@
             }
         }
     }
+    "kodkod":{
+        "name": "Kodkod",
+        "e32_400m30s_tx": {
+          "product_name": "Kodkod E32-400M30S TX",
+          "lua_name": "Kodkod E32-400M30S",
+          "layout_file": "Kodkod E32-x00M30S.json",
+          "logo_file": "elrs64.bin",
+          "upload_methods": ["uart", "wifi"],
+          "min_version": "3.0.0",
+          "platform": "esp32",
+          "firmware": "Unified_ESP32_433_TX",
+          "prior_target_name": "DIY_433_TX_TTGO_V2_SX127x"
+        },
+        "e32_400m20s rx": {
+          "product_name": "Kodkod E32-400M20S RX",
+          "lua_name": "Kodkod E32-400M20S",
+          "layout_file": "Kodkod E32-x00M20S.json",
+          "upload_methods": ["uart", "wifi", "betaflight"],
+          "min_version": "3.0.0",
+          "platform": "esp8285",
+          "firmware": "Unified_ESP8285_433_RX",
+          "prior_target_name": "DIY_433_RX_ESP8285_SX127x"
+        }
+    }
 }
