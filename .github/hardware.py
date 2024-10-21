@@ -167,6 +167,12 @@ field_groups = {
         [["radio_dio0_2", "radio_nss_2"], ["radio_miso", "radio_mosi", "radio_sck"], ["radio_rst_2", "radio_rst", "pwm_outputs"]],
         [["radio_rst_2"], ["radio_dio0_2", "radio_miso", "radio_mosi", "radio_sck", "radio_nss_2"], []]
     ],
+    "433": [
+        [["radio_dio0", "radio_miso", "radio_mosi", "radio_sck", "radio_nss"], [], ["radio_rst", "pwm_outputs"]],
+        [["radio_rst"], ["radio_dio0", "radio_miso", "radio_mosi", "radio_sck", "radio_nss"], []],
+        [["radio_dio0_2", "radio_nss_2"], ["radio_miso", "radio_mosi", "radio_sck"], ["radio_rst_2", "radio_rst", "pwm_outputs"]],
+        [["radio_rst_2"], ["radio_dio0_2", "radio_miso", "radio_mosi", "radio_sck", "radio_nss_2"], []]
+    ],
     "dual": [
         [["radio_dio1", "radio_miso", "radio_mosi", "radio_sck", "radio_nss"], [], ["radio_rst", "pwm_outputs"]],
         [["radio_busy"], ["radio_dio1", "radio_miso", "radio_mosi", "radio_sck", "radio_nss"], ["radio_rst", "pwm_outputs"]],
@@ -233,6 +239,8 @@ def validate_grouping(target, layout, field, radio):
         had_error |= validate_field_grouping(target, layout, field, '2400')
     elif radio.endswith('_900'):
         had_error |= validate_field_grouping(target, layout, field, '900')
+    elif radio.endswith('_433'):
+        had_error |= validate_field_grouping(target, layout, field, '433')
     elif radio.endswith('_dual'):
         had_error |= validate_field_grouping(target, layout, field, 'dual')
     return had_error
