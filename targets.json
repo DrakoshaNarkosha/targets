@@ -2904,5 +2904,34 @@
                 "prior_target_name": "DIY_2400_RX_ESP8285_SX1280"
             }
         }
+    },
+    "kodkod":{
+        "name": "Kodkod",
+        "tx_433": {
+            "e32_400m30s_tx": {
+                "product_name": "Kodkod E32-400M30S 433MHz TX",
+                "lua_name": "Kodkod",
+                "layout_file": "Kodkod E32-x00M30S.json",
+                "logo_file": "kodkod.bin",
+                "upload_methods": ["uart", "wifi"],
+                "min_version": "3.0.0",
+                "platform": "esp32",
+                "firmware": "Unified_ESP32_433_TX",
+                "prior_target_name": "KODKOD_E32-400M30S_433_TX"
+            }
+        },
+        "tx_900": {
+            "e32_900m30s_tx": {
+                "product_name": "Kodkod E32-900M30S 900MHz TX",
+                "lua_name": "Kodkod",
+                "layout_file": "Kodkod E32-x00M30S.json",
+                "logo_file": "kodkod.bin",
+                "upload_methods": ["uart", "wifi"],
+                "min_version": "3.0.0",
+                "platform": "esp32",
+                "firmware": "Unified_ESP32_900_TX",
+                "prior_target_name": "KODKOD_E32-900M30S_900_TX"
+            }
+        }
     }
 }
