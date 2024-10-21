@@ -2904,7 +2904,7 @@
                 "prior_target_name": "DIY_2400_RX_ESP8285_SX1280"
             }
         }
-    }
+    },
     "kodkod":{
         "name": "Kodkod",
         "e32_400m30s_tx": {
