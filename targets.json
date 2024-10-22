@@ -2907,10 +2907,32 @@
     },
     "kodkod":{
         "name": "Kodkod",
+        "rx_433": {
+            "e32_400m20s": {
+                "product_name": "Kodkod E32-400M20S 433Mhz RX",
+                "lua_name": "Kodkod 433Mhz RX",
+                "layout_file": "Kodkod E32-x00M20S.json",
+                "upload_methods": ["uart", "wifi", "betaflight"],
+                "min_version": "3.0.0",
+                "platform": "esp8285",
+                "firmware": "Unified_ESP8285_433_RX"
+            }
+        },
+        "rx_900": {
+            "e32_900m20s": {
+                "product_name": "Kodkod E32-900M20S 900Mhz RX",
+                "lua_name": "Kodkod 900Mhz RX",
+                "layout_file": "Kodkod E32-x00M20S.json",
+                "upload_methods": ["uart", "wifi", "betaflight"],
+                "min_version": "3.0.0",
+                "platform": "esp8285",
+                "firmware": "Unified_ESP8285_900_RX"
+            }
+        },
         "tx_433": {
             "e32_400m30s_tx": {
                 "product_name": "Kodkod E32-400M30S 433MHz TX",
-                "lua_name": "Kodkod",
+                "lua_name": "Kodkod 433Mhz TX",
                 "layout_file": "Kodkod E32-x00M30S.json",
                 "logo_file": "kodkod.bin",
                 "upload_methods": ["uart", "wifi"],
@@ -2923,7 +2945,7 @@
         "tx_900": {
             "e32_900m30s_tx": {
                 "product_name": "Kodkod E32-900M30S 900MHz TX",
-                "lua_name": "Kodkod",
+                "lua_name": "Kodkod 900Mhz TX",
                 "layout_file": "Kodkod E32-x00M30S.json",
                 "logo_file": "kodkod.bin",
                 "upload_methods": ["uart", "wifi"],
