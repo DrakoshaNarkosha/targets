@@ -54,6 +54,7 @@ hardware_fields = {
     "power_pdet_intercept": FieldType.FLOAT,
     "power_pdet_slope": FieldType.FLOAT,
     "power_control": FieldType.INT,
+    "power_enable_pa_boost": FieldType.ARRAY,
     "power_values": FieldType.ARRAY,
     "power_values2": FieldType.ARRAY,
     "power_values_dual": FieldType.ARRAY,
@@ -138,7 +139,7 @@ field_groups = {
         # at-least one of the third group must also be defined
         [["serial_rx", "serial_tx"], [], []],
         [["serial1_rx"], ["serial1_tx"], []],
-        [["power_min", "power_high", "power_max", "power_default", "power_control", "power_values"], [], []],
+        [["power_min", "power_high", "power_max", "power_default", "power_control", "power_values", "power_enable_pa_boost"], [], []],
         [["debug_backpack_baud", "debug_backpack_rx", "debug_backpack_tx"], [], []],
         [["use_backpack"], ["debug_backpack_baud", "debug_backpack_rx", "debug_backpack_tx"], []],
         [["backpack_boot", "backpack_en"], ["use_backpack", "debug_backpack_baud", "debug_backpack_rx", "debug_backpack_tx"], []],
@@ -282,6 +283,7 @@ def validate_power_config(target, layout):
         power_min = layout['power_min']
         power_default = layout['power_default']
         power_high = layout['power_high']
+        power_enable_pa_boost = layout['power_enable_pa_boost']
         if power_min > power_max:
             print(f'device "{target}" power_min must be less than or equal to power_max')
             had_error = True
@@ -307,6 +309,9 @@ def validate_power_config(target, layout):
             if 'power_apc2' not in layout:
                 print(f'device "{target}" power_values2 is defined so the power_apc2 pin must also be defined')
                 had_error = True
+        if (len(power_values) != len(power_enable_pa_boost)):
+            print(f'device "{target}" power_enable_pa_boost must have same number of entities as power_values')
+            had_error = True
     return had_error
 
 
