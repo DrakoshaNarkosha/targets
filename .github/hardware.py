@@ -144,7 +144,7 @@ field_groups = {
         # at-least one of the third group must also be defined
         [["serial_rx", "serial_tx"], [], []],
         [["serial1_rx"], ["serial1_tx"], []],
-        [["frequency_minimum"], ["frequency_maximum"], ["frequency_count"], ["frequency_center"]],
+        [["frequency_custom", "frequency_minimum", "frequency_maximum", "frequency_count", "frequency_center"]],
         [["power_min", "power_high", "power_max", "power_default", "power_control", "power_values", "power_enable_pa_boost"], [], []],
         [["debug_backpack_baud", "debug_backpack_rx", "debug_backpack_tx"], [], []],
         [["use_backpack"], ["debug_backpack_baud", "debug_backpack_rx", "debug_backpack_tx"], []],
