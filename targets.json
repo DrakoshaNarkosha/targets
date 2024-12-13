@@ -2916,6 +2916,15 @@
                 "min_version": "3.0.0",
                 "platform": "esp8285",
                 "firmware": "Unified_ESP8285_433_RX"
+            },
+            "e32_400m20s_diversity": {
+                "product_name": "Kodkod E32-400M20S 433Mhz Diversity RX",
+                "lua_name": "Kodkod 433Mhz RX",
+                "layout_file": "Kodkod E32-x00M20S Diversity.json",
+                "upload_methods": ["uart", "wifi", "betaflight"],
+                "min_version": "3.5.0",
+                "platform": "esp32-c3",
+                "firmware": "Unified_ESP32C3_433_RX"
             }
         },
         "rx_900": {
@@ -2927,6 +2936,15 @@
                 "min_version": "3.0.0",
                 "platform": "esp8285",
                 "firmware": "Unified_ESP8285_900_RX"
+            },
+            "e32_900m20s_diversity": {
+                "product_name": "Kodkod E32-900M20S 900Mhz Diversity RX",
+                "lua_name": "Kodkod 900Mhz RX",
+                "layout_file": "Kodkod E32-x00M20S Diversity.json",
+                "upload_methods": ["uart", "wifi", "betaflight"],
+                "min_version": "3.5.0",
+                "platform": "esp32-c3",
+                "firmware": "Unified_ESP32C3_900_RX"
             }
         },
         "tx_433": {

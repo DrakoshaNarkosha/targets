@@ -1,0 +1,31 @@
+{
+    "radio_miso": 5,
+    "radio_mosi": 4,
+    "radio_sck": 6,
+
+    "radio_nss": 0,
+    "radio_dio0": 1,
+
+    "radio_nss_2": 2,
+    "radio_dio0_2": 3,
+
+    "power_rxen": 7,
+    "power_txen": 8,
+
+    "power_rxen_2": 10,
+    "power_txen_2": 18,
+
+    "power_min": 0,
+    "power_high": 3,
+    "power_max": 3,
+    "power_default": 2,
+    "power_control": 0,
+    "power_values": [114,118,120,127],
+
+    "led_rgb": 19,
+    "led_rgb_isgrb": true,
+    "ledidx_rgb_status": [0],
+    "ledidx_rgb_boot": [0],
+
+    "button": 9
+}
