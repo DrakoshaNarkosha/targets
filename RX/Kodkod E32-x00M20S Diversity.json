@@ -1,16 +1,19 @@
 {
+    "serial_rx": 20,
+    "serial_tx": 21,
+
     "radio_miso": 5,
     "radio_mosi": 4,
     "radio_sck": 6,
 
-    "radio_nss": 0,
-    "radio_dio0": 1,
+    "radio_nss": 2,
+    "radio_dio0": 7,
 
-    "radio_nss_2": 2,
+    "radio_nss_2": 8,
     "radio_dio0_2": 3,
 
-    "power_rxen": 7,
-    "power_txen": 8,
+    "power_rxen": 1,
+    "power_txen": 0,
 
     "power_rxen_2": 10,
     "power_txen_2": 18,
